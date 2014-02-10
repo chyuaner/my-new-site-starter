@@ -1,0 +1,113 @@
+﻿html, body {
+	height: 100%;
+	margin: 0 auto;
+	
+	/**/
+	background: rgb(246,248,249); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.container {	
+	min-height: 100%;
+}
+
+header {
+	padding: 8px;
+	overflow: auto;
+	
+	/**/
+	background: rgb(71,112,74); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(71,112,74,1) 0%, rgba(128,201,133,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,112,74,1)), color-stop(100%,rgba(128,201,133,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(71,112,74,1) 0%,rgba(128,201,133,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(71,112,74,1) 0%,rgba(128,201,133,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(71,112,74,1) 0%,rgba(128,201,133,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(71,112,74,1) 0%,rgba(128,201,133,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47704a', endColorstr='#80c985',GradientType=0 ); /* IE6-9 */
+}
+
+header h1 {
+	font-size: 32px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 8px #000000;
+	display: inline;
+}
+header h2 {
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 22px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 8px #000000;
+	display: inline;
+}
+
+#main { 
+	overflow: auto;
+	padding-bottom: 40px;	/*底部尺寸*/
+	
+}
+
+#main .block {
+	/*position: absolute; 
+	top: 50%;
+	display: table-cell; 
+	vertical-align: middle;	*/
+
+}
+
+.blockGroup {
+	/*border: 1px dotted #000000;*/
+}
+
+.blockGroup section {
+	width: 40%;
+	background-color: #F9F9F9;
+	box-shadow: 3px 3px 10px #999999;
+	
+	margin: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	
+	margin-left:auto; margin-right:auto;	/* 將 myDIV 區塊的外部間距設定為自動均分，就可以達到置中的效果 */ 
+}
+
+.blockGroup section:hover {background-color: #FFFFFF;}
+.blockGroup section a:hover {color: red;}
+
+/*.blockGroup section +.blockGroup section {
+	display: inline-block;
+}*/
+
+
+
+footer {
+	height: 40px;	/*底部尺寸*/
+    position: relative; 
+	margin-top: -56px;	/*底部尺寸*-1-16 */
+	
+	text-align: right;
+	background: #BABABA;
+}
+
+@media handheld, screen and (max-width: 480px) {
+	#main {
+		padding: 10px;
+		padding-bottom: 40px;
+	}
+	.blockGroup section {
+		width: auto;
+		margin: 3px;
+		padding: 0px;
+	}
+	footer {
+		text-align: left;
+	}
+}

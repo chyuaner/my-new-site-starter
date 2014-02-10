@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8" />
+		<title>401 你沒有權限喔</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/mySeverDefault.css" />
+	</head>
+	<body>
+		<div id="wrapper" class="container">
+			<header>
+				<h1>401 你沒有權限喔</h1>
+			</header>
+		
+			<div id="main" role="main">
+				<div class="block">
+					<div class="blockGroup">
+						<section>
+							<h1 style="color: red; text-align: center;"><strong><!--#echo var="REQUEST_URI" --></strong>並不是給你看的喔～</h1>
+							<p>大概是我沒把權限條好也說不定.....</p>
+							<p>如果是想駭入我這邊的話...恩～裡面沒好看的XD</p>
+						</section>
+						<section>
+							<ul>
+								<li>回傳代碼: <!--#echo var="REDIRECT_STATUS" --></li>
+								<li>你的IP: <!--#echo var="REMOTE_ADDR" --></li>
+								<li>你的瀏覽器: <!--#echo var="HTTP_USER_AGENT" --></li>
+								<li>參考URL: <!--#echo var="HTTP_REFERER" --></li>
+								<li>請求的URL: <!--#echo var="REQUEST_URI" --></li>
+								<li>伺服器名: <!--#echo var="HTTP_HOST" --></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>Create in 2012/11/22 &nbsp;&nbsp;By 元兒～</p>
+		</footer>
+	</body>
+</html>
